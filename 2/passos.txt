@@ -1,0 +1,61 @@
+------------------------------------------------------------------------------
+Verificar a versão do python instalada
+Criar um ambiente virtual:python -m venv ./env
+ativar o ambiente virtual: .\env\Scripts\activate.bat
+instalação do django: (pip install django)
+verificar a versão do django instalada (python -m django --version)
+gravando as dependencias: pip freeze > requeriments.txt
+-----------------------------------------------------------------------------
+
+Cria um projeto django django-admin startproject projeto1
+Fazer as configurações do settings.py [arquivos estaticos e templates]
+entrar na pasta do projeto
+para subir o projeto: python manage.py runserver
+para derrubar o servidor> ctrl + c
+
+Criação de um aplicativo dentro do projeto Django() : python manage.py startapp app1
+
+configurou as urls (projeto1 e app1)
+
+criamos uma view(index)
+
+criamos a pasta de templates
+
+---------------------------------------------------------------------
+
+criar migrações do model User (python manage.py makemigrations)
+apliquei as migrações (python manage.py migrate)
+
+----------------------------------------------------------------------
+
+python shell é um terminal de comando das aplicações python, vamos poder manipular os models pelo python shell
+
+para entrar no python shell: python manage.py shell verificação de criação de tabelas
+
+area administrativa do django
+
+criar super usuario: python manage.py createsuperuser
+
+registrar models no admin.py (app1)
+
+------------------------------------------------------------------------
+
+ORM abstração do sql
+arquitetura mvt - models, views e templates
+
+
+-----------------------------------------------------------------------
+
+erro na inserção de dados:
+    mudar o campo no models
+    criar migrações do model User (python manage.py makemigrations)
+    apliquei as migrações (python manage.py migrate)
+
+
+----------------------------------------------------------------------
+criar template
+
+----------------------------------------------------------------------
+
+Criar formulário
+
